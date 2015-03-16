@@ -1,0 +1,16 @@
+<xs:schema targetNamespace="http://acompany.com/it/enterprise/eightball/v1" xmlns:tns="http://acompany.com/it/enterprise/eightball/v1" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified" attributeFormDefault="unqualified">
+	<xs:element name="eightBallRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Question" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="eightBallResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Answer" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
